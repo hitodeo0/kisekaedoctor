@@ -6,10 +6,12 @@
 }
 
 html {
+    margin: 5%;
     min-height: 100%;
 }
 
 body {
+    -webkit-text-size-adjust: 100%;
     min-height: 100%;
     flex-direction: column;
     font-size: 100%;
@@ -19,4 +21,28 @@ body {
 a {
     color: #888888;
     text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #ccc;
+    height: 1em;
+    text-align: center;
+    overflow: visible;
+}
+
+hr:after {
+    content: "\002702";
+    background: rgba(255, 255, 255, 0);
+    color: #ccc;
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    top: -1em;
+    padding: 0 0.5em;
 }
